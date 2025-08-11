@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D10A3E31-27A4-4D32-98E7-7B24D6BEA356}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>Sadhana</RootNamespace>
+    <AssemblyName>Sadhana</AssemblyName>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <ApplicationIcon>aum.ico</ApplicationIcon>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sadhana.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Sadhana.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DateTimePicker, Version=1.0.3588.17243, Culture=neutral, PublicKeyToken=7d7e64d9184f5f96, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\RBWIN_gradnikiV8\DLL\DateTimePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationSettingsClass.vb" />
+    <Compile Include="ApplicationSpecialUtils.vb" />
+    <Compile Include="ClassControl.designer.vb">
+      <DependentUpon>ClassControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClassControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="bct_RectangleBorder.Designer.vb">
+      <DependentUpon>bct_RectangleBorder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bct_RectangleBorder.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataControls\cct_detail.Designer.vb">
+      <DependentUpon>cct_detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\cct_detail.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataControls\ClassDataControl.designer.vb">
+      <DependentUpon>ClassDataControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\ClassDataControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataControls\CountryDataControl.Designer.vb">
+      <DependentUpon>CountryDataControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\CountryDataControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataControls\EducationDataControl.designer.vb">
+      <DependentUpon>EducationDataControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\EducationDataControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataControls\InstructorDataControl.designer.vb">
+      <DependentUpon>InstructorDataControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\InstructorDataControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Invoice\InvoiceDataControl.designer.vb">
+      <DependentUpon>InvoiceDataControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\InvoiceDataControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Invoice\InvoiceDetailDataControl.designer.vb">
+      <DependentUpon>InvoiceDetailDataControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\InvoiceDetailDataControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataControls\LocationDataControl.Designer.vb">
+      <DependentUpon>LocationDataControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\LocationDataControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Person\PersonDataControl.designer.vb">
+      <DependentUpon>PersonDataControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Person\PersonDataControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataControls\ProductDataControl.Designer.vb">
+      <DependentUpon>ProductDataControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\ProductDataControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataControls\RegisteredClassDataControl.designer.vb">
+      <DependentUpon>RegisteredClassDataControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\RegisteredClassDataControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataControls\SemesterDataControl.designer.vb">
+      <DependentUpon>SemesterDataControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\SemesterDataControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormControlContainers\FormControlContainer.designer.vb">
+      <DependentUpon>FormControlContainer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormControlContainers\FormControlContainer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormControls\ClassFormControl.designer.vb">
+      <DependentUpon>ClassFormControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormControls\ClassFormControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormControls\CountryFormControl.Designer.vb">
+      <DependentUpon>CountryFormControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormControls\CountryFormControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormControls\EducationFormControl.Designer.vb">
+      <DependentUpon>EducationFormControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormControls\EducationFormControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormControls\GeneralFormControl.designer.vb">
+      <DependentUpon>GeneralFormControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormControls\GeneralFormControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormControls\InstructorFormControl.designer.vb">
+      <DependentUpon>InstructorFormControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormControls\InstructorFormControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Invoice\InvoiceDetailFormControl.designer.vb">
+      <DependentUpon>InvoiceDetailFormControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\InvoiceDetailFormControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Invoice\InvoiceFormControl.designer.vb">
+      <DependentUpon>InvoiceFormControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\InvoiceFormControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Person\PersonFormControl.designer.vb">
+      <DependentUpon>PersonFormControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Person\PersonFormControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormControls\ProductFormControl.Designer.vb">
+      <DependentUpon>ProductFormControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormControls\ProductFormControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormControls\RegisteredClassFormControl.designer.vb">
+      <DependentUpon>RegisteredClassFormControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormControls\RegisteredClassFormControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormControls\SemesterFormControl.Designer.vb">
+      <DependentUpon>SemesterFormControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormControls\SemesterFormControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmPredpregled.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Explorer_New.Designer.vb">
+      <DependentUpon>frm_Explorer_New.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Explorer_New.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modMain.vb" />
+    <Compile Include="Person\PersonControl.Designer.vb">
+      <DependentUpon>PersonControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Person\PersonControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rptInvoice.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInvoice.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\HallDataControl.designer.vb">
+      <DependentUpon>HallDataControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\HallDataControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataControls\LevelDataControl.designer.vb">
+      <DependentUpon>LevelDataControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\LevelDataControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Person\PersonStatusDataControl.designer.vb">
+      <DependentUpon>PersonStatusDataControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Person\PersonStatusDataControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataControls\SubsidiaryDataControl.designer.vb">
+      <DependentUpon>SubsidiaryDataControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\SubsidiaryDataControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataControls\EventTypeDataControl.designer.vb">
+      <DependentUpon>EventTypeDataControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\EventTypeDataControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="bct_Rectangle.Designer.vb">
+      <DependentUpon>bct_Rectangle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bct_Rectangle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ClassControl.resx">
+      <DependentUpon>ClassControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataControls\ClassDataControl.resx">
+      <DependentUpon>ClassDataControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataControls\CountryDataControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CountryDataControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataControls\EducationDataControl.resx">
+      <DependentUpon>EducationDataControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataControls\EventTypeDataControl.resx">
+      <DependentUpon>EventTypeDataControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataControls\InstructorDataControl.resx">
+      <DependentUpon>InstructorDataControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataControls\LocationDataControl.resx">
+      <DependentUpon>LocationDataControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person\PersonDataControl.resx">
+      <DependentUpon>PersonDataControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataControls\RegisteredClassDataControl.resx">
+      <DependentUpon>RegisteredClassDataControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControlContainers\FormControlContainer.resx">
+      <DependentUpon>FormControlContainer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControls\ClassFormControl.resx">
+      <DependentUpon>ClassFormControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControls\CountryFormControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CountryFormControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControls\EducationFormControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EducationFormControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControls\GeneralFormControl.resx">
+      <DependentUpon>GeneralFormControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControls\InstructorFormControl.resx">
+      <DependentUpon>InstructorFormControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person\PersonFormControl.resx">
+      <DependentUpon>PersonFormControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControls\RegisteredClassFormControl.resx">
+      <DependentUpon>RegisteredClassFormControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person\PersonControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PersonControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataControls\HallDataControl.resx">
+      <DependentUpon>HallDataControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataControls\LevelDataControl.resx">
+      <DependentUpon>LevelDataControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person\PersonStatusDataControl.resx">
+      <DependentUpon>PersonStatusDataControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataControls\SubsidiaryDataControl.resx">
+      <DependentUpon>SubsidiaryDataControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="aum.ico" />
+    <Content Include="jvvz_mb_GUID.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="bct_RectangleBorder.resx">
+      <DependentUpon>bct_RectangleBorder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\InvoiceDataControl.resx">
+      <DependentUpon>InvoiceDataControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\InvoiceDetailDataControl.resx">
+      <DependentUpon>InvoiceDetailDataControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataControls\ProductDataControl.resx">
+      <DependentUpon>ProductDataControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataControls\SemesterDataControl.resx">
+      <DependentUpon>SemesterDataControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\InvoiceDetailFormControl.resx">
+      <DependentUpon>InvoiceDetailFormControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\InvoiceFormControl.resx">
+      <DependentUpon>InvoiceFormControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControls\ProductFormControl.resx">
+      <DependentUpon>ProductFormControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControls\SemesterFormControl.resx">
+      <DependentUpon>SemesterFormControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPredpregled.resx">
+      <DependentUpon>frmPredpregled.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Explorer_New.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_Explorer_New.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptInvoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInvoice.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bct_Rectangle.resx">
+      <DependentUpon>bct_Rectangle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RBWIN_gradnikiV8\RBWIN_gradnikiV8.vbproj">
+      <Project>{CE3C7930-9D4B-49A4-BA5B-E9AF6EEDB0EE}</Project>
+      <Name>RBWIN_gradnikiV8</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataForms\" />
+    <Folder Include="Ikone\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

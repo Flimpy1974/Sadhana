@@ -1,0 +1,182 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+RBWIN_gradnikiV8
+</name>
+</assembly>
+<members>
+<member name="P:RBWIN_gradnikiV8.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:RBWIN_gradnikiV8.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:RBWIN_gradnikiV8.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:RBWIN_gradnikiV8.std_data_parameters">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.#ctor(System.String)">
+	<remarks/>
+</member><member name="E:RBWIN_gradnikiV8.std_WebService.SaveCompleted">
+	<remarks/>
+</member><member name="E:RBWIN_gradnikiV8.std_WebService.get_dataSetCompleted">
+	<remarks/>
+</member><member name="E:RBWIN_gradnikiV8.std_WebService.fun_multiSaveCompleted">
+	<remarks/>
+</member><member name="E:RBWIN_gradnikiV8.std_WebService.execute_sqlCompleted">
+	<remarks/>
+</member><member name="E:RBWIN_gradnikiV8.std_WebService.SaveInsertCompleted">
+	<remarks/>
+</member><member name="E:RBWIN_gradnikiV8.std_WebService.SaveVersionedRecordCompleted">
+	<remarks/>
+</member><member name="E:RBWIN_gradnikiV8.std_WebService.get_dataSetComplexCompleted">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.Save(System.Data.DataSet@,System.String,System.String,System.String,RBWIN_gradnikiV8.std_data_parameters)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.BeginSave(System.Data.DataSet,System.String,System.String,System.String,RBWIN_gradnikiV8.std_data_parameters,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.EndSave(System.IAsyncResult,System.Data.DataSet@)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.SaveAsync(System.Data.DataSet,System.String,System.String,System.String,RBWIN_gradnikiV8.std_data_parameters)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.SaveAsync(System.Data.DataSet,System.String,System.String,System.String,RBWIN_gradnikiV8.std_data_parameters,System.Object)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.get_dataSet(System.String,System.String,System.String,System.Int32,RBWIN_gradnikiV8.std_data_parameters)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.Beginget_dataSet(System.String,System.String,System.String,System.Int32,RBWIN_gradnikiV8.std_data_parameters,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.Endget_dataSet(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.get_dataSetAsync(System.String,System.String,System.String,System.Int32,RBWIN_gradnikiV8.std_data_parameters)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.get_dataSetAsync(System.String,System.String,System.String,System.Int32,RBWIN_gradnikiV8.std_data_parameters,System.Object)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.fun_multiSave(System.String,RBWIN_gradnikiV8.std_data_parameters)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.Beginfun_multiSave(System.String,RBWIN_gradnikiV8.std_data_parameters,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.Endfun_multiSave(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.fun_multiSaveAsync(System.String,RBWIN_gradnikiV8.std_data_parameters)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.fun_multiSaveAsync(System.String,RBWIN_gradnikiV8.std_data_parameters,System.Object)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.execute_sql(System.String,System.String,RBWIN_gradnikiV8.std_data_parameters)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.Beginexecute_sql(System.String,System.String,RBWIN_gradnikiV8.std_data_parameters,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.Endexecute_sql(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.execute_sqlAsync(System.String,System.String,RBWIN_gradnikiV8.std_data_parameters)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.execute_sqlAsync(System.String,System.String,RBWIN_gradnikiV8.std_data_parameters,System.Object)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.SaveInsert(System.Data.DataSet@,System.String,System.String,System.String,RBWIN_gradnikiV8.std_data_parameters)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.BeginSaveInsert(System.Data.DataSet,System.String,System.String,System.String,RBWIN_gradnikiV8.std_data_parameters,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.EndSaveInsert(System.IAsyncResult,System.Data.DataSet@)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.SaveInsertAsync(System.Data.DataSet,System.String,System.String,System.String,RBWIN_gradnikiV8.std_data_parameters)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.SaveInsertAsync(System.Data.DataSet,System.String,System.String,System.String,RBWIN_gradnikiV8.std_data_parameters,System.Object)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.SaveVersionedRecord(System.Data.DataSet@,System.String,System.Int32,System.Boolean,System.String,System.String,System.String,RBWIN_gradnikiV8.std_data_parameters)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.BeginSaveVersionedRecord(System.Data.DataSet,System.String,System.Int32,System.Boolean,System.String,System.String,System.String,RBWIN_gradnikiV8.std_data_parameters,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.EndSaveVersionedRecord(System.IAsyncResult,System.Data.DataSet@)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.SaveVersionedRecordAsync(System.Data.DataSet,System.String,System.Int32,System.Boolean,System.String,System.String,System.String,RBWIN_gradnikiV8.std_data_parameters)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.SaveVersionedRecordAsync(System.Data.DataSet,System.String,System.Int32,System.Boolean,System.String,System.String,System.String,RBWIN_gradnikiV8.std_data_parameters,System.Object)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.get_dataSetComplex(RBWIN_gradnikiV8.std_data_parameters,System.Data.DataSet@)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.Beginget_dataSetComplex(RBWIN_gradnikiV8.std_data_parameters,System.Data.DataSet,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.Endget_dataSetComplex(System.IAsyncResult,System.Data.DataSet@)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.get_dataSetComplexAsync(RBWIN_gradnikiV8.std_data_parameters,System.Data.DataSet)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.get_dataSetComplexAsync(RBWIN_gradnikiV8.std_data_parameters,System.Data.DataSet,System.Object)">
+	<remarks/>
+</member><member name="M:RBWIN_gradnikiV8.std_WebService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:RBWIN_gradnikiV8.std_WebService">
+	<remarks/>
+</member><member name="P:RBWIN_gradnikiV8.strucSettings.prUniqueField">
+	<remarks/>
+</member><member name="P:RBWIN_gradnikiV8.strucSettings.prTableName">
+	<remarks/>
+</member><member name="P:RBWIN_gradnikiV8.strucSettings.prShemaName">
+	<remarks/>
+</member><member name="P:RBWIN_gradnikiV8.strucSettings.prDS">
+	<remarks/>
+</member><member name="T:RBWIN_gradnikiV8.strucSettings">
+	<remarks/>
+</member><member name="P:RBWIN_gradnikiV8.strucComplexDs.prTableName">
+	<remarks/>
+</member><member name="P:RBWIN_gradnikiV8.strucComplexDs.prSQL">
+	<remarks/>
+</member><member name="T:RBWIN_gradnikiV8.strucComplexDs">
+	<remarks/>
+</member><member name="T:RBWIN_gradnikiV8.SaveCompletedEventHandler">
+	<remarks/>
+</member><member name="P:RBWIN_gradnikiV8.SaveCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:RBWIN_gradnikiV8.SaveCompletedEventArgs.ds">
+	<remarks/>
+</member><member name="T:RBWIN_gradnikiV8.SaveCompletedEventArgs">
+	<remarks/>
+</member><member name="T:RBWIN_gradnikiV8.get_dataSetCompletedEventHandler">
+	<remarks/>
+</member><member name="P:RBWIN_gradnikiV8.get_dataSetCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:RBWIN_gradnikiV8.get_dataSetCompletedEventArgs">
+	<remarks/>
+</member><member name="T:RBWIN_gradnikiV8.fun_multiSaveCompletedEventHandler">
+	<remarks/>
+</member><member name="P:RBWIN_gradnikiV8.fun_multiSaveCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:RBWIN_gradnikiV8.fun_multiSaveCompletedEventArgs">
+	<remarks/>
+</member><member name="T:RBWIN_gradnikiV8.execute_sqlCompletedEventHandler">
+	<remarks/>
+</member><member name="P:RBWIN_gradnikiV8.execute_sqlCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:RBWIN_gradnikiV8.execute_sqlCompletedEventArgs">
+	<remarks/>
+</member><member name="T:RBWIN_gradnikiV8.SaveInsertCompletedEventHandler">
+	<remarks/>
+</member><member name="P:RBWIN_gradnikiV8.SaveInsertCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:RBWIN_gradnikiV8.SaveInsertCompletedEventArgs.ds">
+	<remarks/>
+</member><member name="T:RBWIN_gradnikiV8.SaveInsertCompletedEventArgs">
+	<remarks/>
+</member><member name="T:RBWIN_gradnikiV8.SaveVersionedRecordCompletedEventHandler">
+	<remarks/>
+</member><member name="P:RBWIN_gradnikiV8.SaveVersionedRecordCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:RBWIN_gradnikiV8.SaveVersionedRecordCompletedEventArgs.dsMaticni">
+	<remarks/>
+</member><member name="T:RBWIN_gradnikiV8.SaveVersionedRecordCompletedEventArgs">
+	<remarks/>
+</member><member name="T:RBWIN_gradnikiV8.get_dataSetComplexCompletedEventHandler">
+	<remarks/>
+</member><member name="P:RBWIN_gradnikiV8.get_dataSetComplexCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:RBWIN_gradnikiV8.get_dataSetComplexCompletedEventArgs.DS">
+	<remarks/>
+</member><member name="T:RBWIN_gradnikiV8.get_dataSetComplexCompletedEventArgs">
+	<remarks/>
+</member>
+</members>
+</doc>

@@ -1,0 +1,1 @@
+Rich Client application developed in Visual Basic.NET for local Yoga society. It manages societies events, members, membership invoices and membership invoices. The underlying database can be MS SQL Server or access database.
